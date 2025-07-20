@@ -39,7 +39,7 @@ services:
 ### 2. Start the Services
 
 ```bash
-docker-compose up -d
+docker-compose up 
 ```
 
 Then open your browser and navigate to: [knot](http://localhost:3001)
