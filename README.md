@@ -50,6 +50,25 @@ http://localhost:3001
 
 ---
 
+
+## Pull Any Open-Source Model
+
+Once your Ollama server is running, you can pull from the ui itself and start using various open-source language models.
+
+
+### Popular Models
+
+| Model Name     | Tag                  | Size   |
+| -------------- | -------------------- | ------ |
+| DeepSeek-R1    | `deepseek-r1:1.5b`   | 1.1 GB |
+| Qwen 2.5 Coder | `qwen2.5-coder:0.5b` | 398 MB |
+| Qwen 2.5 Coder | `qwen2.5-coder:1.5b` | 986 MB |
+| Gemma 3        | `gemma3:1b`          | 815 MB |
+| Gemma 3n (e2b) | `gemma3n:e2b`        | 5.6 GB |
+
+> After pulling a model, you can immediately start chatting with it through the Knot UI.
+
+
 ## About the Project
 
 This setup combines:
