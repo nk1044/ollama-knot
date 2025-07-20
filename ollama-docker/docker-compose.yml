@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ./ollama_models:/root/.ollama
+    restart: unless-stopped
+    environment:
+      - OLLAMA_HOST=0.0.0.0
+
+  knot:
+    image: neerajkumar1044/knot:latest
+    container_name: knot
+    ports:
+      - "3001:3001"
+    depends_on:
+      - ollama
+    restart: unless-stopped
